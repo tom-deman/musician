@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/musician/static/css/main.4100bed0.chunk.css",
+    "main.js": "/musician/static/js/main.f93b1339.chunk.js",
+    "main.js.map": "/musician/static/js/main.f93b1339.chunk.js.map",
+    "runtime-main.js": "/musician/static/js/runtime-main.e076c4f6.js",
+    "runtime-main.js.map": "/musician/static/js/runtime-main.e076c4f6.js.map",
+    "static/css/2.c51298e9.chunk.css": "/musician/static/css/2.c51298e9.chunk.css",
+    "static/js/2.e02322ab.chunk.js": "/musician/static/js/2.e02322ab.chunk.js",
+    "static/js/2.e02322ab.chunk.js.map": "/musician/static/js/2.e02322ab.chunk.js.map",
+    "index.html": "/musician/index.html",
+    "precache-manifest.90dcb0f694d4ad9302064a8311feca74.js": "/musician/precache-manifest.90dcb0f694d4ad9302064a8311feca74.js",
+    "service-worker.js": "/musician/service-worker.js",
+    "static/css/2.c51298e9.chunk.css.map": "/musician/static/css/2.c51298e9.chunk.css.map",
+    "static/css/main.4100bed0.chunk.css.map": "/musician/static/css/main.4100bed0.chunk.css.map",
+    "static/media/1.jpg": "/musician/static/media/1.a11c2910.jpg",
+    "static/media/10.jpg": "/musician/static/media/10.2d72a94d.jpg",
+    "static/media/2.jpg": "/musician/static/media/2.f780080d.jpg",
+    "static/media/3.jpg": "/musician/static/media/3.93012910.jpg",
+    "static/media/4.jpg": "/musician/static/media/4.aebed2af.jpg",
+    "static/media/5.jpg": "/musician/static/media/5.c23adf26.jpg",
+    "static/media/6.jpg": "/musician/static/media/6.a3d39250.jpg",
+    "static/media/7.jpg": "/musician/static/media/7.50a9a452.jpg",
+    "static/media/8.jpg": "/musician/static/media/8.73fcb5a3.jpg",
+    "static/media/9.jpg": "/musician/static/media/9.44e8852b.jpg",
+    "static/media/main.css": "/musician/static/media/trashhand.28e6ad13.TTF",
+    "static/media/all.css": "/musician/static/media/fa-solid-900.db525089.woff",
+    "static/media/one.jpg": "/musician/static/media/one.a3b24254.jpg",
+    "static/media/two.jpg": "/musician/static/media/two.9f0541cf.jpg"
+  }
+}
