@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "trashhand";
+  src: url("../trashhand.TTF");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.listen {
+  height: 150vh;
+}
+
+.covers {
+  height: 100vh;
+}
+
+.videoclip {
+  height: 65vh;
+}
+
+.my-container {
+  width: 75%;
+}
+
+.footer {
+  height: 25vh;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+.border-color {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.header {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.header .title {
+  font-family: 'trashhand';
+  font-size: 200px;
+  line-height: 1;
+}
+
+.w-perso {
+  width: 75vh;
+}
+
+.mycolor {
+  background-color: #141414;
+}
+
+.titleListen {
+  font-family: 'trashhand';
+}
+
+.my-w {
+  width: 42%;
+}
+
+.pictures {
+  height: 70vh;
+  width: 70vh;
+}
+
+.dots {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.dots:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.dots-active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.pix {
+  width: 20vh;
+  height: 20vh;
+}
+
+.background-img {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.video-title {
+  font-family: 'trashhand';
+}
+
+.portfolio {
+  width: 20%;
+}
+
+.social {
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.my-width {
+  width: 80vh;
+}
+
+.hauteur {
+  height: 115vh;
+}
+
+@media screen and (max-width: 770px) {
+  #myNav {
+    display: none;
+  }
+  .icons {
+    width: 40vh;
+  }
+  .header .title {
+    font-size: 70px;
+  }
+  .chevron {
+    display: none;
+  }
+  .icon-text {
+    display: none;
+  }
+  .pictures {
+    height: 50%;
+    width: 75%;
+  }
+  .listen {
+    height: auto;
+    padding-bottom: 20%;
+  }
+  .mobile {
+    display: none;
+  }
+  .portfolio {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10%;
+  }
+  .ornot {
+    display: block;
+  }
+  .covers {
+    height: auto;
+  }
+  .hauteur {
+    height: auto;
+  }
+  .my-width {
+    width: 80%;
+  }
+  .my-input {
+    width: 150px;
+  }
+  .mobile-padding {
+    padding-bottom: 35%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
