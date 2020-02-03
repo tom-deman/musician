@@ -34,6 +34,21 @@ const Navbar = () => {
           }
      ]
 
+     const socialTabs = [
+          {
+               href: 'https://www.facebook.com',
+               icon: 'fab fa-facebook-f'
+          },
+          {
+               href: 'https://www.instagram.com',
+               icon: 'fab fa-instagram'
+          },
+          {
+               href: 'https://twitter.com',
+               icon: 'fab fa-twitter'
+          }
+     ]
+
 
      useEffect(() => {
           window.addEventListener( 'scroll', () => {
@@ -78,7 +93,9 @@ const Navbar = () => {
                     <div className='flex justify-between h-16 border-b border-color'>
                          <div>
                               <p className='text-white mt-5 ml-8 select-none font-semibold text-lg'>
-                                   TD
+                                   <a href="https://tom-deman.github.io/portfolio-final/">
+                                        TD
+                                   </a>
                               </p>
                          </div>
 
@@ -87,7 +104,10 @@ const Navbar = () => {
                                    { navLinks.map(
                                         ( element, index ) => {
                                              return(
-                                                  <li className='m-5'>
+                                                  <li
+                                                       className='m-5'
+                                                       key={ index }
+                                                  >
                                                        <a
                                                             href={ element.href }
                                                             className={
@@ -106,22 +126,23 @@ const Navbar = () => {
                          </div>
 
                          <div className='border-l border-color'>
-                              <a
-                                   href='https://www.facebook.com'
-                                   target='_blank'
-                              >
-                                   <i className='fab fa-facebook-f text-white mt-6 hover:text-gray-500 ml-10' />
-                              </a>
-                              <a href='https://www.instagram.com' target='_blank'>
-                                   <i class='fab fa-instagram text-white mt-6 hover:text-gray-500 ml-6'></i>
-                              </a>
-                              <a href='https://twitter.com' target='_blank'>
-                                   <i class='fab fa-twitter text-white mt-6 hover:text-gray-500 ml-5 mr-10'></i>
-                              </a>
+                              { socialTabs.map(
+                                   ( element, index ) => {
+                                        return(
+                                             <a
+                                                  href={ element.href }
+                                                  target='_blank'
+                                                  key={ index }
+                                             >
+                                                  <i className={ `${ element.icon } text-white mt-6 hover:text-gray-500 mx-5` } />
+                                             </a>
+                                        )
+                                   }
+                              )}
                          </div>
                     </div>
 
-                    <div className={count > 1 ? 'h-4 w-4 bottom-0 mb-10 right-0 mr-10 fixed z-50' : 'hidden'}>
+                    <div className={count > 0 ? 'h-4 w-4 bottom-0 mb-10 right-0 mr-10 fixed z-50' : 'hidden'}>
                          <a
                               href='#intro'
                               className='z-50'
@@ -131,24 +152,24 @@ const Navbar = () => {
                     </div>
 
                     <div className='rightdots fixed right-0 mr-8 m-64 z-50'>
-                         <a href='#intro'>
-                              <div className={count === 1 ? 'bg-white h-2 w-2 rounded-full mt-5 z-50' : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'} />
-                         </a>
-                         <a href='#album'>
-                              <div className={count === 2 ? 'bg-white h-2 w-2 rounded-full mt-5 z-50' : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'}></div>
-                         </a>
-                         <a href='#videoclip'>
-                              <div className={count === 3 ? 'bg-white h-2 w-2 rounded-full mt-5 z-50' : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'}></div>
-                         </a>
-                         <a href='#events'>
-                              <div className={count === 4 ? 'bg-white h-2 w-2 rounded-full mt-5 z-50' : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'}></div>
-                         </a>
-                         <a href='#gallery'>
-                              <div className={count === 5 ? 'bg-white h-2 w-2 rounded-full mt-5 z-50' : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'}></div>
-                         </a>
-                         <a href='#news'>
-                              <div className={count === 6 ? 'bg-white h-2 w-2 rounded-full mt-5 z-50' : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'}></div>
-                         </a>
+                         { navLinks.map(
+                              ( element, index ) => {
+                                   return(
+                                        <a
+                                             href={ element.href }
+                                             key={ index }
+                                        >
+                                             <div
+                                                  className={
+                                                       count === index
+                                                            ? 'bg-white h-2 w-4 rounded-full mt-5 z-50'
+                                                            : 'bg-gray-500 h-2 w-2 rounded-full hover:bg-gray-500 mt-5 z-50'
+                                                  }
+                                             />
+                                        </a>
+                                   )
+                              }
+                         ) }
                     </div>
                </div>
           </StrictMode>

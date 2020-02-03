@@ -1,6 +1,5 @@
 import React, {
-     StrictMode,
-     useState
+     StrictMode
 } from 'react'
 
 
@@ -26,9 +25,12 @@ const Dates = () => {
      return (
           <StrictMode>
                { datesTabs.map(
-                    ( element ) => {
+                    ( element, index ) => {
                          return(
-                              <div className='h-32 bg-transparent border-t border-color border-b my-container m-auto flex justify-around items-center'>
+                              <div
+                                   className='h-32 bg-transparent border-t border-color border-b my-container m-auto flex justify-around items-center'
+                                   key={ index }
+                              >
                                    <p className='text-white mobile'>
                                         { element.where }
                                    </p>
