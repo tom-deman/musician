@@ -15,22 +15,22 @@ export default class Portfolio extends Component {
 
      render() {
           return (
-               <div className="covers mycolor pt-24" id="gallery">
-                    <div className="w-full">
-                         <div className="flex ornot">
-                              <img src={one} alt="" className="portfolio" />
-                              <img src={two} alt="" className="portfolio" />
-                              <img src={three} alt=""  className="portfolio" />
-                              <img src={four} alt=""  className="portfolio" />
-                              <img src={five} alt=""  className="portfolio" />
+               <div className='covers mycolor pt-24' id='gallery'>
+                    <div className='w-full'>
+                         <div className='flex ornot'>
+                              <img src={one} alt='' className='portfolio' />
+                              <img src={two} alt='' className='portfolio' />
+                              <img src={three} alt=''  className='portfolio' />
+                              <img src={four} alt=''  className='portfolio' />
+                              <img src={five} alt=''  className='portfolio' />
                          </div>
 
-                         <div className="flex ornot">
-                              <img src={six} alt="" className="portfolio" />
-                              <img src={seven} alt="" className="portfolio" />
-                              <img src={eight} alt=""  className="portfolio" />
-                              <img src={nine} alt=""  className="portfolio" />
-                              <img src={ten} alt=""  className="portfolio" />
+                         <div className='flex ornot'>
+                              <img src={six} alt='' className='portfolio' />
+                              <img src={seven} alt='' className='portfolio' />
+                              <img src={eight} alt=''  className='portfolio' />
+                              <img src={nine} alt=''  className='portfolio' />
+                              <img src={ten} alt=''  className='portfolio' />
                          </div>
                     </div>
                </div>

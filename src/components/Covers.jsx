@@ -1,52 +1,75 @@
-import React, { Component } from 'react'
+import React, {
+     StrictMode,
+     useState
+} from 'react'
 
-import coverOne from '../assets/img/covers/one.jpg'
-import coverTwo from '../assets/img/covers/two.jpg'
+import coverOne   from '../assets/img/covers/one.jpg'
+import coverTwo   from '../assets/img/covers/two.jpg'
+import coverThree from '../assets/img/covers/three.jpg'
 
 
+const Covers = () => {
+     const [ count, setCount ] = useState( 0 )
+     const [ actualCover, setActualCover ] = useState( coverOne )
 
-export default class Covers extends Component {
+     const buttonTabs = [
+          coverOne,
+          coverTwo,
+          coverThree
+     ]
 
-     constructor(props) {
-          super(props)
-          this.state = {
-               count: 1
+     const changeCover = ( a ) => {
+          setActualCover( a )
+          switch( a ) {
+               case coverOne:
+                    setCount( 0 )
+                    break
+               case coverTwo:
+                    setCount( 1 )
+                    break
+               case coverThree:
+                    setCount( 2 )
+                    break
+               default:
+                    // Do nothing
           }
-          this.handleClickOne = this.handleClickOne.bind(this)
-          this.handleClickTwo = this.handleClickTwo.bind(this)
-          
      }
 
+     const buttonClass = 'bg-gray-400 rounded-full h-2 w-2'
 
-     handleClickOne() {
-          this.setState({
-               count: 1
-          })
-     }
-
-
-     handleClickTwo() {
-          this.setState({
-               count: 2
-          })
-     }
-
-     render() {
-          return (
-               <div className="covers mycolor">
-                    <div className="pictures m-auto">
-                         <img src={this.state.count === 1 ? coverOne : coverTwo} alt="" />
+     return (
+          <StrictMode>
+               <div className='covers mycolor'>
+                    <div className='pictures m-auto'>
+                         <img
+                              src={ actualCover }
+                              alt='covers images'
+                         />
                     </div>
 
-                    <div className="w-24 flex justify-around m-auto mt-20">
-                         <a href="javascript:void(0)">
-                              <div className={this.state.count === 1 ? "bg-gray-400 rounded-full h-2 w-2 dots-active" : "bg-gray-400 rounded-full h-2 w-2 dots"} onClick={this.handleClickOne}></div>
-                         </a>
-                         <a href="javascript:void(0)">
-                              <div className={this.state.count === 2 ? "bg-gray-400 rounded-full h-2 w-2 dots-active" : "bg-gray-400 rounded-full h-2 w-2 dots"} onClick={this.handleClickTwo}></div>
-                         </a>
+                    <div className='w-24 flex justify-around m-auto mt-20'>
+                         { buttonTabs.map(
+                              ( element, index ) => {
+                                   return(
+                                        <button key={ index }>
+                                             <div
+                                                  className={
+                                                       count === index
+                                                            ? `${ buttonClass } dots-active`
+                                                            : `${ buttonClass } dots`
+                                                  }
+                                                  onClick={ () => changeCover( element ) }
+                                             >
+                                             </div>
+                                        </button>
+                                   )
+                              }
+                         )}
                     </div>
                </div>
-          )
-     }
+          </StrictMode>
+     )
 }
+
+
+export default Covers
