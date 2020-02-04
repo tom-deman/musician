@@ -9,7 +9,7 @@ import coverThree from '../assets/img/covers/three.jpg'
 
 
 const Covers = () => {
-     const [ count, setCount ] = useState( 0 )
+     const [ count, setCount ]             = useState( 0 )
      const [ actualCover, setActualCover ] = useState( coverOne )
 
      const buttonTabs = [
@@ -31,7 +31,7 @@ const Covers = () => {
                     setCount( 2 )
                     break
                default:
-                    // Do nothing
+                    break
           }
      }
 

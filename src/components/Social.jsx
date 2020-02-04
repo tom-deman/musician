@@ -34,7 +34,7 @@ const Social = () => {
           <StrictMode>
                <div className='w-full videoclip social'>
                     <div className='my-container videoclip flex justify-around items-center m-auto'>
-                         {socialTabs.map(
+                         { socialTabs.map(
                               ( element, index ) => {
                                    return(
                                         <a

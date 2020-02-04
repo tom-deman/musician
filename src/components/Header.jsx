@@ -30,7 +30,7 @@ const Header = () => {
                     id='intro'
                >
                     <Navbar />
-                    <h1 className='title text-white text-center pt-32'>
+                    <h1 className='title text-white text-center pt-32 animated fadeInLeft delay-1s'>
                          New album
                          <br />
                          is out !

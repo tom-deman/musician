@@ -27,7 +27,7 @@ html {
   height: 25vh;
 }
 
-button:focus, input:focus {
+button:focus, input:focus, textarea:focus {
   outline: none;
 }
 
@@ -103,6 +103,13 @@ button:focus, input:focus {
 
 .portfolio {
   width: 20%;
+}
+
+.portfolio:hover {
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .social {

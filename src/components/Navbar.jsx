@@ -79,7 +79,7 @@ const Navbar = () => {
                          setCount( 5 )
                          break
                     default:
-                         // DO nothing
+                         break
                }
           })
      }, [])
@@ -87,7 +87,7 @@ const Navbar = () => {
      return (
           <StrictMode>
                <div
-                    className='bg-transparent fixed w-full'
+                    className='bg-transparent fixed w-full z-50'
                     id='myNav'
                >
                     <div className='flex justify-between h-16 border-b border-color'>
@@ -142,7 +142,7 @@ const Navbar = () => {
                          </div>
                     </div>
 
-                    <div className={count > 0 ? 'h-4 w-4 bottom-0 mb-10 right-0 mr-10 fixed z-50' : 'hidden'}>
+                    <div className={ count > 0 ? 'h-4 w-4 bottom-0 mb-10 right-0 mr-10 fixed z-50' : 'hidden' }>
                          <a
                               href='#intro'
                               className='z-50'

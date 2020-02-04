@@ -1,9 +1,19 @@
 import React, {
-     StrictMode
+     StrictMode,
+     useState,
+     useEffect
 } from 'react'
 
 
 const News = () => {
+     const [ count, setCount ] = useState( 0 )
+
+     useEffect(() => {
+          window.addEventListener( 'scroll', () => {
+               if(window.scrollY > 3950)
+                    setCount( 1 )
+          })
+     })
      const newsTabs = [
           {
                date: 'September 20, 2019',
@@ -32,10 +42,16 @@ const News = () => {
                     id='news'
                >
                     <hr className='border-color my-container m-auto' />
-                    <p className='video-title text-white text-center text-5xl pt-32 mb-24'>
-                         News
-                    </p>
-                    {newsTabs.map(
+                    { count === 1
+                         ?
+                              <p className='video-title text-white text-center text-5xl pt-32 mb-12 animated fadeIn slow'>
+                                   News
+                              </p>
+                         :
+                              <div className='h-64'></div>
+                    }
+
+                    { newsTabs.map(
                          ( element, index ) => {
                               return(
                                    <div
