@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/musician/static/css/main.4100bed0.chunk.css",
-    "main.js": "/musician/static/js/main.f93b1339.chunk.js",
-    "main.js.map": "/musician/static/js/main.f93b1339.chunk.js.map",
+    "main.css": "/musician/static/css/main.b957475b.chunk.css",
+    "main.js": "/musician/static/js/main.a70e847c.chunk.js",
+    "main.js.map": "/musician/static/js/main.a70e847c.chunk.js.map",
     "runtime-main.js": "/musician/static/js/runtime-main.e076c4f6.js",
     "runtime-main.js.map": "/musician/static/js/runtime-main.e076c4f6.js.map",
-    "static/css/2.c51298e9.chunk.css": "/musician/static/css/2.c51298e9.chunk.css",
-    "static/js/2.e02322ab.chunk.js": "/musician/static/js/2.e02322ab.chunk.js",
-    "static/js/2.e02322ab.chunk.js.map": "/musician/static/js/2.e02322ab.chunk.js.map",
+    "static/css/2.4b63fb7e.chunk.css": "/musician/static/css/2.4b63fb7e.chunk.css",
+    "static/js/2.1e726f62.chunk.js": "/musician/static/js/2.1e726f62.chunk.js",
+    "static/js/2.1e726f62.chunk.js.map": "/musician/static/js/2.1e726f62.chunk.js.map",
     "index.html": "/musician/index.html",
-    "precache-manifest.45be3fdb5965d8f8ecdc53dc3e416f6c.js": "/musician/precache-manifest.45be3fdb5965d8f8ecdc53dc3e416f6c.js",
+    "precache-manifest.26e0abb40a3826f6335a517d583faf9a.js": "/musician/precache-manifest.26e0abb40a3826f6335a517d583faf9a.js",
     "service-worker.js": "/musician/service-worker.js",
-    "static/css/2.c51298e9.chunk.css.map": "/musician/static/css/2.c51298e9.chunk.css.map",
-    "static/css/main.4100bed0.chunk.css.map": "/musician/static/css/main.4100bed0.chunk.css.map",
+    "static/css/2.4b63fb7e.chunk.css.map": "/musician/static/css/2.4b63fb7e.chunk.css.map",
+    "static/css/main.b957475b.chunk.css.map": "/musician/static/css/main.b957475b.chunk.css.map",
     "static/media/1.jpg": "/musician/static/media/1.a11c2910.jpg",
     "static/media/10.jpg": "/musician/static/media/10.2d72a94d.jpg",
     "static/media/2.jpg": "/musician/static/media/2.f780080d.jpg",
@@ -26,6 +26,7 @@
     "static/media/main.css": "/musician/static/media/trashhand.28e6ad13.TTF",
     "static/media/all.css": "/musician/static/media/fa-solid-900.db525089.woff",
     "static/media/one.jpg": "/musician/static/media/one.a3b24254.jpg",
+    "static/media/three.jpg": "/musician/static/media/three.0416a7b1.jpg",
     "static/media/two.jpg": "/musician/static/media/two.9f0541cf.jpg"
   }
 }
