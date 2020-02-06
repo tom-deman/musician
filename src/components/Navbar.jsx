@@ -93,7 +93,7 @@ const Navbar = () => {
                     <div className='flex justify-between h-16 border-b border-color'>
                          <div>
                               <p className='text-white mt-5 ml-8 select-none font-semibold text-lg'>
-                                   <a href="https://tom-deman.github.io/portfolio-final/">
+                                   <a href="https://tom-deman.github.io/portfolio/">
                                         TD
                                    </a>
                               </p>
@@ -132,6 +132,7 @@ const Navbar = () => {
                                              <a
                                                   href={ element.href }
                                                   target='_blank'
+                                                  rel="noopener noreferrer"
                                                   key={ index }
                                              >
                                                   <i className={ `${ element.icon } text-white mt-6 hover:text-gray-500 mx-5` } />

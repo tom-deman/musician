@@ -55,7 +55,7 @@ const News = () => {
                          ( element, index ) => {
                               return(
                                    <div
-                                        className='text-white my-width m-auto text-center mb-16'
+                                        className='text-white my-width m-auto text-center pb-16'
                                         key={ index }
                                    >
                                         <p className='text-xs font-thin mb-3'>

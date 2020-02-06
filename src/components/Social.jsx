@@ -39,7 +39,8 @@ const Social = () => {
                                    return(
                                         <a
                                              target='_blank'
-                                             className='mobile'
+                                             rel="noopener noreferrer"
+                                             className={index > 2 ? 'mobile' : ''}
                                              href={ element.href }
                                              key={ index }
                                         >

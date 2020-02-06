@@ -46,6 +46,7 @@ const Header = () => {
                                              <a
                                                   href={ element.href }
                                                   target='_blank'
+                                                  rel="noopener noreferrer"
                                              >
                                                   <i className={ `${ element.icon } text-white text-5xl hover:text-red-500` } />
                                              </a>
@@ -53,6 +54,7 @@ const Header = () => {
                                                   <a
                                                        href='https://www.apple.com/befr/apple-music/'
                                                        target='_blank'
+                                                       rel="noopener noreferrer"
                                                   >
                                                        { element.text }
                                                   </a>
